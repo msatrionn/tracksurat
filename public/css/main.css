@@ -1,0 +1,409 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:active {
+    background: #555;
+}
+
+.wrap {
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+}
+
+.isi {
+    border-radius: 10px;
+    font-size: 13px;
+    width: 100%;
+    margin-right: 2%;
+    margin-left: 2%;
+    transition: all 0.5s;
+}
+
+.isi.active {
+    width: 80%;
+    transition: all 0.5s;
+}
+
+.aksi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aksi a,
+.aksi button {
+    font-size: 11px;
+    margin: 0px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.disposisi button,
+.disposisi a {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.aksi i {
+    margin: 0 2px;
+}
+
+.lamp a {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    height: 30px;
+}
+
+.lamp i {
+    margin: 0 2px;
+}
+
+.keterangan {
+    background: none;
+    border: none;
+}
+
+.row {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.small-box {
+    width: 250px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid none;
+    border-radius: 20px;
+    color: #fff;
+    height: 75px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-box .inner {
+    margin-top: 7px;
+}
+
+.small-box .inner a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-table {
+    width: 100%;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.create a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    font-size: 10px;
+}
+
+.create a i {
+    margin-left: 3px;
+}
+
+.searchInput {
+    float: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px 0px;
+    padding: 0px 4px;
+}
+
+.searchInput input {
+    border: 1px solid rgb(167, 161, 161);
+    border-radius: 50px;
+    margin-left: 8px;
+    height: 34px;
+    width: 100%;
+    padding: 0px 25px 0px 10px;
+    transition: all .6s ease;
+    font-size: 12px;
+}
+
+.searchInput label {
+    color: #000;
+    font-weight: normal;
+}
+
+.searchInput input:placeholder-shown {
+    width: 13%;
+}
+
+.searchInput:hover input:placeholder-shown {
+    width: 100%;
+    cursor: text;
+}
+
+.searchInput:after {
+    font-family: 'FontAwesome';
+    color: #d4d4d4;
+    position: relative;
+    content: "\f002";
+    right: 25px;
+}
+
+.titles {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #111;
+}
+
+.titles .sub-titles {
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    background: #4d5bf9;
+    color: #fff;
+}
+
+.disposisi_kepsek {
+    display: inline-flex;
+}
+
+.disposisi_kepsek select,
+.disposisi_kepsek button {
+    height: 30px;
+    margin: 0 3px;
+    font-size: 11px;
+}
+
+.inner-table {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-table button {
+    font-size: 14px;
+    width: 120px;
+    height: 32px;
+}
+
+
+/* maxwidth */
+
+@media(max-width:1500px) {
+    .isi {
+        width: 100%;
+    }
+}
+
+@media(max-width:1300px) {
+    .isi {
+        width: 90%;
+    }
+    body {
+        font-size: 14px;
+    }
+    .sub-titles {
+        font-size: 16px;
+    }
+    .isi.active {
+        width: 80%;
+    }
+    .small-box {
+        width: 230px;
+    }
+}
+
+@media(max-width:1250px) {
+    .isi.active {
+        width: 75%;
+    }
+    .small-box {
+        width: 23%;
+    }
+}
+
+@media(max-width:991px) {
+    .row {
+        flex-wrap: nowrap;
+        width: 100%;
+        display: inline-flex;
+    }
+    .small-box {
+        width: 25%;
+    }
+    .small-box a {
+        width: 25%;
+    }
+}
+
+@media(max-width:900px) {
+    .isi {
+        font-size: 11px;
+    }
+    body {
+        font-size: 11px;
+    }
+    .titles .sub-titles {
+        font-size: 14px;
+        height: 40px;
+    }
+    .aksi a,
+    .aksi button {
+        font-size: 10px;
+        margin: 0px 3px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .disp a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        height: 20px;
+    }
+    .titles {
+        height: 30px;
+    }
+    .create a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 24px;
+        width: 80px;
+        font-size: 10px;
+    }
+    .searchInput {
+        height: 24px;
+    }
+    .searchInput input {
+        height: 24px;
+    }
+}
+
+@media(max-width:765px) {
+    .inner-table button {
+        transition: 0.5s all;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:745px) {
+    .isi.active {
+        width: 70%;
+    }
+    ]
+}
+
+@media(max-width:643px) {
+    .isi.active {
+        width: 65%;
+    }
+    .small-box {
+        width: 23%;
+    }
+}
+
+@media(max-width:619px) {
+    .isi {
+        width: 85%;
+    }
+}
+
+@media(max-width:585px) {
+    .isi {
+        width: 83%;
+    }
+    .judul h3 {
+        transition: 0.5s all;
+        font-size: 13px;
+    }
+    .inner-table button {
+        transition: 0.5s all;
+        font-size: 9px;
+    }
+}
+
+@media(max-width:551px) {
+    .isi {
+        font-size: 10px;
+    }
+    body {
+        font-size: 10px;
+    }
+    .titles,
+    .sub-titles {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:451px) {
+    .isi {
+        font-size: 8px;
+    }
+    .isi.active {
+        width: 60%;
+    }
+    body {
+        font-size: 8px;
+    }
+    .titles,
+    .sub-titles {
+        font-size: 10px;
+    }
+}

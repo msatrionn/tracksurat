@@ -1,0 +1,77 @@
+ /* $primary:#4298c3;
+ $dark-1:#2f3331;
+ $dark-2:#252827; */
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ .track {
+     color: #000;
+     letter-spacing: 1px;
+ }
+ 
+ p {
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 1.5;
+     opacity: 0.9;
+ }
+ 
+ .timeline {
+     padding: 10px;
+     max-width: 900px;
+     margin: 0 auto;
+ }
+ 
+ .timeline .timeline-body {
+     position: relative;
+     /* background-color: rgba(0, 4, 15, 0.761); */
+     margin-left: 100px;
+     border-radius: 0 8px 8px 0;
+ }
+ 
+ .timeline .timeline-body:after {
+     content: '';
+     width: 4px;
+     height: 100%;
+     background-color: #4298c3;
+     position: absolute;
+     left: -4px;
+     top: 0;
+ }
+ 
+ .timeline .timeline-item {
+     position: relative;
+ }
+ 
+ .timeline .timeline-item:after {
+     content: '';
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     border: 4px solid #4298c3;
+     background-color: #2f3331;
+     position: absolute;
+     left: -12px;
+     top: 0px;
+     z-index: 9;
+ }
+ 
+ .timeline .timeline-item .time {
+     position: absolute;
+     left: -100px;
+     font-size: 11px;
+     color: #000;
+ }
+ 
+ .timeline .timeline-item .content {
+     margin: 40px;
+     padding-bottom: 40px;
+     border-bottom: 1px dashed #555;
+ }
+ 
+ .timeline .timeline-item .content .judul {
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
